@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DigitalExpress - Produtos Digitais Profissionais</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #4a148c, #7b1fa2);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #6a1b9a;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+    }
+    nav a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd54f;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .product {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: white;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .product img {
+      max-width: 100%;
+      width: 300px;
+      height: auto;
+      object-fit: cover;
+    }
+    .product-content {
+      flex: 1;
+      padding: 20px;
+    }
+    .product-content h2 {
+      margin-top: 0;
+      color: #4a148c;
+    }
+    .product-content p {
+      line-height: 1.6;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #4a148c;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #6a1b9a;
+    }
+    footer {
+      background-color: #4a148c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    @media (max-width: 768px) {
+      .product {
+        flex-direction: column;
+        align-items: center;
+      }
+      .product img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DigitalExpress</h1>
+    <p>Os melhores produtos digitais com qualidade profissional.</p>
+  </header>
+
+  <nav>
+    <a href="#produtos">Produtos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="container" id="produtos">
+    <h2 style="color:#6a1b9a;">Nossos Produtos</h2>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1581091870622-7b89d6108e2b?auto=format&fit=crop&w=600&q=80" alt="E-book dinheiro online">
+      <div class="product-content">
+        <h2>E-book: Como Ganhar Dinheiro Online</h2>
+        <p>Um guia completo e atualizado com estratégias práticas para ganhar dinheiro trabalhando de casa. Inclui dicas sobre marketing digital, afiliados, produção de conteúdo, e muito mais. Perfeito para iniciantes e experientes.</p>
+        <strong>Preço: R$19,90</strong>
+        <br>
+        <a class="btn" onclick="comprar('E-book: Como Ganhar Dinheiro Online')">Comprar agora</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1600180758890-6a4784ebc90b?auto=format&fit=crop&w=600&q=80" alt="Template de currículo">
+      <div class="product-content">
+        <h2>Template de Currículo Profissional</h2>
+        <p>Modelo de currículo moderno, minimalista e 100% editável no Word e Canva. Ideal para causar uma ótima primeira impressão em processos seletivos.</p>
+        <strong>Preço: R$9,90</strong>
+        <br>
+        <a class="btn" onclick="comprar('Template de Currículo Profissional')">Comprar agora</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1620912189865-35b3a23d8b01?auto=format&fit=crop&w=600&q=80" alt="Curso Canva">
+      <div class="product-content">
+        <h2>Mini Curso: Design com Canva</h2>
+        <p>Aprenda a criar artes incríveis para redes sociais, posts, banners e apresentações usando o Canva. Curso rápido, objetivo e direto ao ponto. Inclui certificado de conclusão.</p>
+        <strong>Preço: R$29,90</strong>
+        <br>
+        <a class="btn" onclick="comprar('Mini Curso: Design com Canva')">Comprar agora</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="contato">
+    <h2 style="color:#6a1b9a;">Fale Conosco</h2>
+    <p>Tem dúvidas, sugestões ou precisa de ajuda? Entre em contato conosco pelo e-mail abaixo.</p>
+    <p><strong>Email:</strong> contato@digitalexpress.com</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 DigitalExpress. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function comprar(produto) {
+      alert("Você selecionou: " + produto + "\n(Compra simulada para apresentação)");
+    }
+  </script>
+</body>
+</html>
